@@ -1,26 +1,26 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
+import { Grid, Button } from '@material-ui/core'
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <div>
-            <Grid container style={{backgroundColor: '#738adb', height: '3.5em'}} spacing = {0}> 
-                <Grid item xs={7}/>
-                <Grid item xs={1}>
-                    Home
-                </Grid>
-                <Grid item xs={1}>
+            <Grid container style={{backgroundColor: '#738adb', height: '3.5em'}} spacing = {0} alignItems="center" justify="space-evenly"> 
+                <Button style={{color: 'white'}} component = {Link} to = '/dashboard'> 
+                    Home 
+                </Button>
+                <Button style={{color: 'white'}} component = {Link} to = '/calendar'> 
+                    Calendar
+                </Button>
+                <Button style={{color: 'white'}} component = {Link} to = '/tasks'> 
+                    Tasks
+                </Button>
+                <Button style={{color: 'white'}} component = {Link} to = '/classroom'> 
+                    Classroom
+                </Button>
+                <Button style={{color: 'white'}} component = {Link} to = '/account'> 
                     Account
-                </Grid>
-                <Grid item xs={1}>
-                    Account
-                </Grid>
-                <Grid item xs={1}>
-                    Account
-                </Grid>
-                <Grid item xs={1}>
-                    Account
-                </Grid>
+                </Button>
             </Grid>
         </div>
     )

@@ -2,8 +2,8 @@ import React from 'react'
 
 function Dashboard() {
     return (
-        <div>
-            
+        <div style={{paddingTop:100}}>
+            Bitches
         </div>
     )
 }
